@@ -1,0 +1,433 @@
+@charset "utf-8";
+html>body {
+	font-size:22px;
+	background-image:url(../images/Orange.jpg);
+	background-repeat:no-repeat;
+}
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl, li { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+ul {
+	margin-top: 5px;
+}
+ul li {
+	margin-left: 20px;
+} 
+ul#nav, ul.navSocialMedia {
+	list-style:none;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+ul#nav li {
+	float:left;
+	padding: 0;
+	margin-top: 0;
+	margin-right: 10px;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+ul#nav a:hover, ul.navSocialMedia a:hover {
+	color:#FFF;
+	background-color: #f30;
+}
+ul#nav a {
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	text-transform:uppercase;
+	text-decoration: none;
+	color: #A09C9D;
+	padding-right:10px;
+	font-family: 'ExoLight';
+}
+.lineBreak {
+	background-color: #F60;
+	border-top-color: #F60;
+	border-right-color: #F60;
+	border-bottom-color: #F60;
+	border-left-color: #F60;
+}
+.navServices {
+	font-size: 14px;
+	list-style-image: none;
+	list-style-type: none;
+}
+li img {
+	padding-top:5px;
+	margin-right:5px;
+}
+li div {
+	max-width:95%;
+	margin-bottom:5px;
+}
+.navDiv {
+	margin-bottom: 20px;
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding-right: 5px;
+	padding-left: 5px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #000;
+	margin: 0;
+	line-height:1.5em;
+}
+h1 {
+	font-size:1em;
+	font-family: 'ExoRegular';
+}
+h2 {
+	font-size:.8em;
+	font-family: 'ExoRegular';
+	margin-bottom: 5px;
+}
+h3 {
+	font-size:.7em;
+	font-family: 'ExoRegular';
+}
+h4 {
+	font-size:.6em;
+	font-family: 'ExoRegular';
+}
+p {
+	font-size:15px;
+	line-height:1.3em;
+	opacity: 1;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: 'ExoRegular';
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+	/* [disabled]margin-right: 10px; */
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	/*color: #4E5869; */
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+label {
+	font-family: 'ExoRegular';
+	min-width: 200px; 
+	}
+.addr {
+	padding: 3px;
+	font-size: 36px;
+}
+.contactform {
+	max-width:300px;
+	}
+.sidebar {
+	padding: 0;
+	margin: 0;
+	background-image: url(../images/sidebar_vertical_line.jpg);
+	background-position: right top;
+	background-repeat: repeat-y;
+	background-color: #FFF;
+	background-attachment: scroll;
+	height: 600px;
+} 
+#services, #portfolio {
+	position:relative;
+}
+#services {
+	height: 28px;
+	line-height: 28px;
+	text-transform:uppercase;
+	color: #A09C9D;
+	padding-right:10px;
+	font-family: 'ExoLight';
+}
+#services:hover {
+	background-color: #F30;
+	cursor: pointer;
+}
+.servicesText {
+	font-size: large;
+	font-family: ExoRegular;
+	/* background-image: url(../images/backgroundColor.png); */
+	background-color: #F30;
+}
+.submnu{ list-style-type: none; }
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 	padding: 0 15px 15px 40px; }
+
+#submnuServices a {
+		background-color: #F30;
+		width:125px;
+}
+#submnuServices {
+	border-left-width: thin;
+	border-left-style: solid;
+	border-left-color:  #096;
+	height:300px;
+	position: absolute;
+	display:none;
+	z-index: 1;
+	padding-bottom:50px;
+}
+
+.footer {
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	background-color: #CCC;
+	bottom: 30px;
+	left: 0px;
+	opacity: .75;
+	margin-top: 10px;
+	position: static;
+}
+.footerPgh {
+	font-size: 0.7em;
+	color: #F60;
+	display: inline;
+	font-family: 'ExoRegular';
+	font-weight: normal;
+	font-variant: small-caps;
+}
+.fltlft {
+	float:left;
+}
+.fltrt {
+	float:right;
+}
+.clrflt{
+	clear:both;
+}
+.derrick {
+	height:100px;
+}
+.socialmediaskin {
+	margin-top: 2em;
+}
+.bodycopy, .dddtitletext{
+	top: -1000px;
+	position: absolute;
+	padding: 0px;
+}
+.portfolio h2{
+	font-family: 'ExoThin';
+	padding-top:4px;
+ 	width:173px;
+}
+.portfolio img{
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+.clients_name {
+	font-size:200%;
+	min-width:100px;
+}
+.desktopImg + p {	 
+	margin-top: 10px;
+	opacity: .9;
+	padding-top:20px;
+}
+. {
+	box-shadow: 5px 5px 5px 1px #DDB992;
+}
+.backgroundColor {
+	background-color: rgba(255, 163, 0, .3);
+}
+.navSocialMedia {
+	background-color:#F30;
+}
+.contactField {
+		display: inline-block;
+		padding: 2px;
+
+}
+.marginLeft20px {
+	margin-left: 20px;
+	}
+.required {
+	font-style: oblique;
+	}
+
+/* iphone portrait */
+
+
+@media screen and (max-width: 481px) {
+
+	.dddtitle {
+		border-bottom-width: medium;
+		border-bottom-style: solid;
+		border-bottom-color: #F30;
+		right: 10px;
+		position: relative;
+		min-width: 200px;
+	}
+	
+	p {
+		font-size:17px;
+		line-height:1.3em;
+		opacity: 1;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin: 0px;
+		font-family: 'ExoRegular';
+	}
+	h2 {
+		font-size: 75% !important;
+		line-height:1.2em;
+	}
+	.addr {
+		font-size: 20px;
+	}
+	
+	.ourTeamCopy {
+		font-size:15px;
+	}
+	
+	ul#nav li {
+		font-size: 0.85em;
+		width:300px;
+	}
+	ul#nav a {
+		display: block;
+	}
+	ul#nav {
+		margin-top: 20px;
+		
+	}
+	ul.navSocialMedia a {
+		float:left;
+	}
+	li div {
+	max-width:80%;
+	margin-bottom:5px;
+	}
+	.cont-call-wrap > p, .cont-call-wrap > a {
+		font-size:.5em;
+	}
+	.mobileImg {
+		margin-bottom: 10px;
+	}
+	.borderMobileImg {
+	border: thin solid #FF0000;
+	}
+}
+q {
+	font-size: 88%;
+	line-height: 15px;
+}
+
+
+@media screen and (min-width: 482px) {
+	.dddtitle{
+		border-bottom-width: medium;
+		border-bottom-style: solid;
+		border-bottom-color: #F30;
+		right: 75px;
+		position: relative;
+		min-width: 200px;
+	}
+}
+
+/* @media (min-width: 768px) and (max-width: 979px) { */
+
+@media screen and (max-width: 979px) { 
+
+	h1 {
+		font-size: 80%;
+		font-family: 'ExoRegular';
+	}
+	h2 {
+		font-size: 70%;
+		font-family: 'ExoRegular';
+	}
+	h3 {
+		font-size: 60%;
+		font-family: 'ExoRegular';
+	}
+	h4 {
+		font-size: 50%;
+		font-family: 'ExoRegular';
+	}
+	li div {
+		max-width:85%;
+		margin-bottom:5px;
+	}
+}
+@media screen and (min-width: 980px) and (max-width: 1186px) { 
+
+	.mobileImg {
+		display: none;
+	}
+}
+@media screen and (min-width: 1100px) {
+	
+	.webPortfolioContainer {
+    	min-height: 10em;
+    	display: table-cell;
+    	vertical-align: middle; 
+		}
+}
+
+.divBackground {
+	background-image: url(../images/divBackground.png);
+	background-repeat: repeat;
+	padding: -15px;
+}
+
+.shout {
+	font-family: 'ExoMedium',Arial, Helvetica, sans-serif;
+	font-size: 400%;
+	text-height: auto;
+	font-weight: bolder;
+	color: #F30;
+	margin: 0;
+}
+
+.transforms {
+	font-style: oblique;
+	text-transform: uppercase;
+}
+
+.rule {
+	border-bottom-width: thin;
+	border-bottom-style: dotted;
+	border-bottom-color: #F60;
+	width: 105px;
+}
+
+.whisper {
+	font-size: 75%;
+}
+
+.fltlft {
+	float: left;
+}
+
+.fltrt {
+	float: right;
+}
+
+.clrflt {
+	clear:both;
+}
+
+#m_page {
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #F30;
+}
+
+.phone-services-btn:hover{
+	width:170%;
+}
+.email, .businesscard {
+	font-weight: bold;
+}
