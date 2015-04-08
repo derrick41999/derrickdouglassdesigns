@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*!
+ * Custom Responsive v1.0
+ *
+ * Copyright 2013 Derrick Douglass
+ * Licensed under Creative Commons
+ *
+ * Handcrafted with love and sweat by Derrick Douglass
+ */
+ 
+ /* Large desktop */
+@media (min-width: 1200px) { ... }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	#gallery, #slides, .test {
+	width:300px;
+	height:200px;
+	background:none;
+	background-color:#009999;
+	overflow:hidden;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+ /* Landscape phones and down */
+@media (max-width: 480px) { 	
+	
+	.responsive-clear-float-phone {
+		clear:both;
+	}
+	
+	.responsive-text-size {
+	font-size: 16px;
+	}
+	
+	.min-image-width {
+	/* [disabled]min-width: 270px; */
+	} 
+}
+
+	.max-image-width {
+	max-width: 770px;
+	} 
